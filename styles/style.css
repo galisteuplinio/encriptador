@@ -1,0 +1,15 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+}
+
+.campo__encriptador{
+    display: flex;
+    flex-direction:column;
+    gap: 500px;
+}
+textarea{
+    border: 0;
+    background-color: burlywood;
+}
