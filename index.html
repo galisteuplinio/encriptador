@@ -5,31 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Decodificador</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
     <header>
-
+        <img class="imagem__a"src="./assets/Frame6.png">
     </header>
-    <main>
-        <img src="./assets/Frame6.png">
-        <section class="campo__encriptador">
-          <div>        
-             <textarea id="story" rows="6" cols="50">
-            </textarea>
-          </div>
- 
-          <div>
-          <button>Criptografar</button> 
-          <button>Descriptografar</button>
-        </div>
-          </section>
-          <label>
-            <img src="./assets/HighQuality.png">
-            </label>
+    <main class="principal">
+            <section class="campo__encriptador">
+                
+                <label> Escreva o texto abaixo e selecione uma opção: </label>
+                <textarea id="story" rows="30" cols="60"></textarea>
+
+                <div class="apresentacao__botoes">
+                    <button onclick="criptografaTexto()" id="botao__cripto" class="a__botao" >Criptografar</button> 
+                    <button class="a__botao" onclick="descriptografaTexto()">Descriptografar</button>
+                </div>
+
+            </section >
+            
+            <section class="campo__decriptador">
+                <label> Copie o texto usando o botão: </label>
+                <textarea id="tela" rows="30" cols="40"></textarea>
+                <button class="a__botao" onclick="CopiaAreaTrasferencia()">Copiar</button>
+            </section>
     </main>
     <footer>
 
     </footer>
+    <script src="./scripts/app.js"></script>
+
 </body>
 </html>
