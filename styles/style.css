@@ -18,8 +18,8 @@ body{
 
 .principal{
     display: flex;
-    margin: 0 5%;
-    gap:20px;
+    margin: 5% 5%;
+
 
 }
 .imagem__a{
@@ -45,6 +45,7 @@ body{
     gap: 1rem;
     padding: 0;
     margin: auto;
+
 }
 .apresentacao__botoes{
     display: flex;
@@ -73,7 +74,7 @@ body{
 }
 
 #tela{
-    border: 1;
+    border: 0;
      border-radius: 2%; 
     background: #DCDCDC url("../assets/HighQuality.png") no-repeat center
 }

@@ -14,9 +14,7 @@
     </header>
     <main class="principal">
             <section class="campo__encriptador">
-                
-                <label> Escreva o texto abaixo e selecione uma opção: </label>
-                <textarea id="story" rows="30" cols="60"></textarea>
+                <textarea  type="text" id="story" rows="30" cols="60"  placeholder="Escreva o texto e selecione uma opção."></textarea>
 
                 <div class="apresentacao__botoes">
                     <button onclick="criptografaTexto()" id="botao__cripto" class="a__botao" >Criptografar</button> 
@@ -26,8 +24,7 @@
             </section >
             
             <section class="campo__decriptador">
-                <label> Copie o texto usando o botão: </label>
-                <textarea id="tela" rows="30" cols="40"></textarea>
+                <textarea type="text" id="tela" rows="30" cols="40"  placeholder="Copie o texto usando o botão copiar." readonly></textarea>
                 <button class="a__botao" onclick="CopiaAreaTrasferencia()">Copiar</button>
             </section>
     </main>

@@ -8,8 +8,10 @@ function copiaTexto(){
 }
 
 function colaTexto(texto){
-    document.querySelector('#tela').innerHTML = texto;
+    console.log("Coloca o texto no lugar correto")
+    document.querySelector("#tela").value = texto;
 }
+
 function criptografaTexto(texto = copiaTexto()){
     let charts  = [] = texto.split('')
     for(var item in charts){
@@ -53,16 +55,13 @@ function descriptografaTexto(texto = copiaTexto()){
         }
    })
      colaTexto(texto)
-   
 }
-function CopiaAreaTrasferencia() {
-    let textArea = document.querySelector('#tela');
-    textArea.select();
-    document.execCommand('copy');
-    limparCampo('#tela')
+function limparCampo(campo){
+    document.querySelector(campo).value = '';
 }
 
-function limparCampo(campo){
-    chute = document.querySelector(campo).value = '';
-    
+function CopiaAreaTrasferencia() {
+    let texto = document.getElementById("tela");
+    navigator.clipboard.writeText(texto.value);
+    texto.value='';   
 }
