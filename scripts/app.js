@@ -8,7 +8,6 @@ function copiaTexto(){
 }
 
 function colaTexto(texto){
-    console.log("Coloca o texto no lugar correto")
     document.querySelector("#tela").value = texto;
 }
 
